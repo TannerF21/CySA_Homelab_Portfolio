@@ -6,7 +6,9 @@ Collect baseline system and authentication logs across the homelab to understand
 Commands Used:
 
 sudo cat /var/log/auth.log | tail -n 25
+
 sudo journalctl -p 3 -xb
+
 sudo less /var/log/syslog
 
 
