@@ -10,7 +10,8 @@ Collect baseline system and authentication logs across the homelab to understand
 sudo cat /var/log/auth.log | tail -n 25
 sudo journalctl -p 3 -xb
 sudo less /var/log/syslog
-Findings
+
+Findings:
 Kubuntu showed normal login entries for user bjohnson.
 
 No failed login or suspicious activity recorded.
