@@ -1,4 +1,4 @@
-Week 1 – Day 2: Log Baseline
+Log Baseline
 
 Objective:
 Collect baseline system and authentication logs across the homelab to understand normal user activity and system operations.
