@@ -19,6 +19,7 @@ sudo nano /etc/rsyslog.conf
  module(load="imudp")
  
  input(type="imudp" port="514")
+ 
 sudo systemctl restart rsyslog
 
 # On Kubuntu (Log Forwarder)
@@ -26,7 +27,7 @@ sudo nano /etc/rsyslog.d/90-remote.conf
 # Add:
 # *.* @10.10.10.168:514
 sudo systemctl restart rsyslog
-#Findings
+# Findings
 Verified that Kali successfully received Kubuntu system logs via UDP/514.
 
 Live log events (e.g., service restarts, SSH logins) appeared in Kali’s /var/log/syslog.
