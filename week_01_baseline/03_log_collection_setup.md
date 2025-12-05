@@ -15,8 +15,8 @@ sudo systemctl enable --now rsyslog
 # Enable UDP listener on port 514
 sudo nano /etc/rsyslog.conf
 # Uncomment:
-# module(load="imudp")
-# input(type="imudp" port="514")
+ module(load="imudp")
+ input(type="imudp" port="514")
 sudo systemctl restart rsyslog
 
 # On Kubuntu (Log Forwarder)
@@ -32,6 +32,7 @@ Live log events (e.g., service restarts, SSH logins) appeared in Kali’s /var/l
 Log forwarding confirmed network connectivity and real-time monitoring capabilities.
 
 Summary
+
 Centralized logging successfully implemented using rsyslog.
 This configuration provides a foundation for security monitoring and future SIEM integration (e.g., ELK or Graylog).
 Next steps include parsing logs for events and establishing alert rules for anomalies
