@@ -1,4 +1,4 @@
-## 🎯 Objective  
+##  Objective  
 Configure centralized log collection in the homelab by forwarding Kubuntu system logs to a central syslog server (Kali) for monitoring and future analysis.
 
 ---
